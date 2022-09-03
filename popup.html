@@ -2,14 +2,25 @@
 <html>
     <head>
         <meta  charset="utf-8" />
-        <title>Easy Text Saver</title>
+        <title>Summ.it</title>
+        <link rel="stylesheet" href="styles.css">
         <script  src="popup.js"></script>
     </head>
     <body>
         <div id="popup-body">
-        <h2>Easy Text Saver</h2>
-        <h3>Here is your saved text!</h3>
-        <div id="output"></div>
+            <div id="box">
+                <h1 >Summ.it</h1>
+            </div>
+
+            <p>Text to Summarize: <p>
+
+            <div id="output">
+            </div>
+            <p>[click text to delete]</p>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="parameter">
+            <p>Value: <span id="op"></span></p>
         </div>
     </body>
 </html>

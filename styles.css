@@ -1,0 +1,65 @@
+body {
+    max-width: 400px;
+    min-height: 300px;
+    background-color:rgb(21, 21, 26);
+    color:white;
+  }
+  h1 {
+
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    padding-top:5px;
+  }
+  p {
+    color: rgb(180, 183, 224);
+  }
+
+ #output { 
+    color:white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgba(15, 4, 76, 0.281);
+} 
+
+#box {
+    height: 40px;
+    width: 400px;
+    background-color: rgb(120, 122, 145);
+    border-radius: 5px;
+  }
+
+  .slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }

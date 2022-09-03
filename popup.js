@@ -1,4 +1,11 @@
-window.onload = function() {
+window.onload = function () {
+    var slider = document.getElementById("parameter");
+    var output = document.getElementById("op");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
     // console.log("We here");
     chrome.tabs.executeScript( {
     code: "window.getSelection().toString();"
@@ -21,3 +28,4 @@ text.addEventListener("click", function(e){
     });
 });
 };
+

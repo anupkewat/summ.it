@@ -1,26 +1,27 @@
 {
   "manifest_version": 2,
   "name": "Summ.it",
-  "description": "Summarize selected text",
   "version": "1.0",
- 
-  "browser_action": {
-    "default_icons": "icons/16x16.png",
-    "default_popup": "html/popup.html"
-  },
-  "icons": {
-    "16": "icons/16x16.png",
-    "48": "icons/48x48.png",
-    "128": "icons/128x128.png"
-  },
-  "permissions": [
-    "contextMenus",
-    "downloads",
-    "storage"
+  "description": "Jzt Summit baby!",
+   "permissions": [
+      "activeTab",
+      "storage"
   ],
+  "icons": {
+      "16" : "icons/16x16.png",
+      "48" : "icons/48x48.png",
+      "128": "icons/128x128.png"
+  },
+  "browser_action": {
+      "default_icon": "icons/48x48.png",
+      "default_popup": "popup.html",
+      "default_title": "Summ.it"
+  },
   "background": {
-    "persistent": false,
-    "scripts": ["js/common.js", "js/event-page.js"]
+      "scripts": [
+          "background.js"
+          
+      ],
+      "persistent": false
+      }
   }
-  
-}

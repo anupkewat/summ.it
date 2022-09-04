@@ -40,6 +40,7 @@ body {
   }
 
   .slidecontainer {
+    padding-top:5px;
     width: 100%;
   }
   
@@ -97,4 +98,31 @@ body {
     to {
       background-position: 200% center;
     }
+  }
+
+  .button {
+    background-color: #000000; /* Green */
+    border: none;
+    border-radius:30px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #5bcce9; /* Green */
+  }
+
+  .button:hover
+  {
+    outline: none;
+    border-color: #5bcce9;
+    box-shadow: 0 0 10px #81dcf3;
+  }
+
+  .button:active
+  {
+    background-color: #3b3b3b; /* Green */
+
   }

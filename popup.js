@@ -9,10 +9,19 @@ window.onload = function () {
     // console.log("We here");
     chrome.tabs.executeScript( {
     code: "window.getSelection().toString();"
-    }, function(selection) {
+    }, function (selection) {
         chrome.runtime.sendMessage({selection: selection[0]}, function(response) {
             // console.log(response);
-           document.getElementById("output").innerHTML = response.clips;
+    const deepai = require('deepai'); 
+    deepai.setApiKey('QUdJIGlzIGNvbWluZy4uLi4K');
+
+    (async function() {
+        var resp = await deepai.callStandardApi("summarization", {
+                text:response.clips,
+        });
+        summary=resp.output;
+    })()
+           document.getElementById("output").innerHTML = summary;
         });
     });
 

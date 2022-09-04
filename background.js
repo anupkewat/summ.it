@@ -1,6 +1,4 @@
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    // console.log("Request");
-    // console.log(request.empty);
     let clippings = [];
     chrome.storage.sync.get("list", function (result) {
       // console.log(result);

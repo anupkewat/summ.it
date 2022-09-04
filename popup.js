@@ -1,6 +1,6 @@
 window.onload = function () {
-    var slider = document.getElementById("parameter");
-    var output = document.getElementById("op");
+    var slider = document.getElementById("parameter"); 
+    var output = document.getElementById("op"); //the slidder value. Use this as the variable
     output.innerHTML = slider.value;
 
     slider.oninput = function () {

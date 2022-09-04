@@ -1,32 +1,41 @@
 body {
     max-width: 400px;
     min-height: 300px;
-    background-color:rgb(21, 21, 26);
+    background-color:#000000;
+    font-size: 16px;
     color:white;
   }
   h1 {
 
-    color: rgb(255, 255, 255);
+    color: #571E51;
     font-family: 'Trebuchet MS';
     text-align: center;
-    padding-top:5px;
+    padding-top:2px;
   }
   p {
     color: rgb(180, 183, 224);
   }
 
  #output { 
-    color:white;
+    color:rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
     padding: 5px;
-    background-color: rgba(15, 4, 76, 0.281);
+    background-color:#E0E0E2;
+    font-style: italic;
+    font-weight: bold;
 } 
+
+#output:hover { 
+    outline: none;
+    border-color: #aedbff;
+    box-shadow: 0 0 10px #aedbff;
+}
 
 #box {
     height: 40px;
     width: 400px;
-    background-color: rgb(120, 122, 145);
+    background-color: #38363ac5;
     border-radius: 5px;
   }
 
@@ -52,7 +61,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%; 
-    background: #04AA6D;
+    background: #00ccff;
     cursor: pointer;
   }
   
@@ -62,4 +71,30 @@ body {
     border-radius: 50%;
     background: #04AA6D;
     cursor: pointer;
+  }
+
+  .animate-charcter
+  {
+    background-image: linear-gradient(
+      -225deg,
+      #2ddaf8 0%,
+      #1ed154 29%,
+      #ff1361 67%,
+      #fff800 100%
+
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }

@@ -1,4 +1,4 @@
-# summ.it
+# Summ.it
 
 ### Collaborators
 [Sabarinaath SS](https://github.com/sabari50312)\
